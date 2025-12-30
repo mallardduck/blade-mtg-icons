@@ -16,21 +16,21 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
-        $result = svg('mana-9')->toHtml();
+        $result = svg('mtg-9')->toHtml();
         $this->assertMatchesSnapshot($result);
     }
 
     /** @test */
     public function it_can_add_classes_to_icons()
     {
-        $result = svg('mana-ability-amass', 'w-6 h-6 text-gray-500')->toHtml();
+        $result = svg('mtg-ability-amass', 'w-6 h-6 text-gray-500')->toHtml();
         $this->assertMatchesSnapshot($result);
     }
 
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('mana-artifact', ['style' => 'color: #555'])->toHtml();
+        $result = svg('mtg-artifact', ['style' => 'color: #555'])->toHtml();
         $this->assertMatchesSnapshot($result);
     }
 
