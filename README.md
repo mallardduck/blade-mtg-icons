@@ -47,25 +47,25 @@ php artisan vendor:publish --tag=blade-mtg-icons-config
 Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
-<x-heroicon-o-adjustments/>
+<x-mana-u/>
 ```
 
 You can also pass classes to your icon components:
 
 ```blade
-<x-heroicon-o-adjustments class="w-6 h-6 text-gray-500"/>
+<x-mana-tap class="w-6 h-6 text-gray-500"/>
 ```
 
 And even use inline styles:
 
 ```blade
-<x-heroicon-o-adjustments style="color: #555"/>
+<x-mana-saga style="color: #555"/>
 ```
 
 The solid icons can be referenced like this:
 
 ```blade
-<x-heroicon-s-adjustments/>
+<x-mana-ticket/>
 ```
 
 ### Raw SVG Icons
@@ -79,7 +79,7 @@ php artisan vendor:publish --tag=blade-mtg-icons --force
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-mtg-icons/o-adjustments.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-mtg-icons/1.svg') }}" width="10" height="10"/>
 ```
 
 ## Changelog
