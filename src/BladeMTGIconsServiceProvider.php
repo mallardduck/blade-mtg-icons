@@ -17,7 +17,7 @@ final class BladeMTGIconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-mtg-icons', []);
 
-            $factory->add('mana', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('mtg', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
     }
 
