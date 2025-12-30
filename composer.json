@@ -1,8 +1,8 @@
 {
-    "name": "blade-organization/blade-heroicons",
-    "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
-    "keywords": ["Blade", "Heroicons", "Laravel"],
-    "homepage": "https://github.com/blade-organization/blade-heroicons",
+    "name": "mallardduck/blade-mtg-icons",
+    "description": "A package to easily make use of MTG Icons in your Laravel Blade views.",
+    "keywords": ["Blade", "MTG Icons", "Laravel"],
+    "homepage": "https://github.com/mallardduck/blade-mtg-icons",
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BladeUI\\Heroicons\\": "src"
+            "MallardDuck\\MTGIcons\\": "src"
         }
     },
     "autoload-dev": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                "MallardDuck\\MTGIcons\\BladeMTGIconsServiceProvider"
             ]
         }
     },
