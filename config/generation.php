@@ -17,6 +17,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet) {
 
     $lastKey = count($fileLines) - 1;
     $fileLines[$lastKey] = trim($fileLines[$lastKey]);
+    array_shift($fileLines);
     file_put_contents($tempFilepath, $fileLines);
 };
 
