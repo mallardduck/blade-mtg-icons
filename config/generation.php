@@ -9,6 +9,10 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet) {
     $doc->save($tempFilepath);
 
     $fileLines = file($tempFilepath);
+    if (!is_array($fileLines)) {
+        // TODO: maybe log this
+        return;
+    }
     array_shift($fileLines);
 
     $lastKey = count($fileLines) - 1;
