@@ -15,6 +15,16 @@ A package to easily make use of [Mana](https://github.com/andrewgioia/Mana) (MTG
 
 For a full list of available icons see [the SVG directory](resources/svg) or preview them at [mana.andrewgioia.com](https://mana.andrewgioia.com/).
 
+There are also some additional icons not sourced from Mana icons as supplements for easier use via Blade Icons.
+These are:
+
+- `white`
+- `blue`
+- `black`
+- `red`
+- `green`
+- `colorless`
+
 ## Requirements
 
 - PHP 8.2 or higher
