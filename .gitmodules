@@ -1,0 +1,3 @@
+[submodule "Mana"]
+	path = Mana
+	url = https://github.com/andrewgioia/Mana
