@@ -1,7 +1,7 @@
 <?php
 
 $svgNormalization = static function (string $tempFilepath, array $iconSet) {
-    $doc = new DOMDocument();
+    $doc = new DOMDocument;
     $doc->load($tempFilepath);
     $svgElement = $doc->getElementsByTagName('svg')[0];
     $svgElement->removeAttribute('width');
@@ -9,7 +9,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet) {
     $doc->save($tempFilepath);
 
     $fileLines = file($tempFilepath);
-    if (!is_array($fileLines)) {
+    if (! is_array($fileLines)) {
         // TODO: maybe log this
         return;
     }
